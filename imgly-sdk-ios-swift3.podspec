@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "imglyKit"
+  s.name         = "imgly-sdk-ios-swift3"
   s.version      = '6.1.2'
   s.summary      = "Doppeltime imglyKit."
 
@@ -78,7 +78,9 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/doppeltime-iOSDev/imgly-sdk-ios-swift3.git", :tag => "#{s.version}" }
+  # s.source       = { :git => "https://github.com/doppeltime-iOSDev/imgly-sdk-ios-swift3.git", :tag => "#{s.version}" }
+
+  s.source       = { :git => "https://github.com/doppeltime-iOSDev/imgly-sdk-ios-swift3.git", :commit => "9804b4db8d058407337e876523b38e1314a77117" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +91,15 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.source_files = "imgly-sdk-ios-swift3/**/*.{h,m}" 
+
+  # s.source_files  = 'imgly-sdk-ios-swift3/Classes/*.{h,m}'
+
+  s.source_files  = 'Classes/**/*.{h,m}'
+
+
+
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
